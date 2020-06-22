@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@200;300;500&display=swap');
+/*
+Abril :
+Regular 400
+Pallete color:
+# 011627 
+- #FF3366 -
+ #2EC4B6 -
+  #F6F7F8 - 
+  #20A4F3 
+
+Montserrat:: 
+Extra-light 200
+Regular 400
+Medium 500
+
+
+*/
+:root {
+  --color-primary: #f7af2b;
+  --color-primary-light-1: #fbda9e;
+  --color-primary-light-2: #f9c86c;
+  --color-primary-dark-1: #956206;
+  --color-primary-dark-2: #432c03;
+  --heading-font: 'Abril Fatface', cursive;
+  --body-font: 'Montserrat', sans-serif;
+
+  --color-succes: #4a90e2;
+  --color-succes-light: #ebf3fc;
+  --color-delete: #d91e2a;
+  --color-preview: #d84b00;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  /* 1rem=10px */
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: 1.6rem;
+  line-height: 1.7;
+  font-weight: 300;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 95%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+}
+h2 {
+  font-size: 250%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 175%;
+}
+h4 {
+  font-size: 125%;
+}
+.btns-btn {
+  background-color: unset;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.2rem;
+  /* outline: 0; */
+  border: 1px black solid;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(32, 33, 36, 0.28);
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.btn-send {
+  border: 1px var(--color-succes) solid;
+  color: var(--color-succes);
+}
+.btns-btn:active,
+.btns-btn:focus {
+  border: 1px green solid;
+  outline: 0;
+}
+.btn-svg {
+  padding: 0 0 0 1.2rem;
+  height: 100% !important;
+  display: flex;
+  align-items: center;
+}
+.btns-btn:hover .btn-svg {
+  transform: scale(1.03);
+  fill-opacity: 0.9;
+}
+
+.btns-btn:active {
+  transform: scale(1.05);
+  outline: 0;
+}
+
+.btn-preview {
+  border: 1px var(--color-preview) solid;
+  color: var(--color-preview);
+}
+
+.btn-delete {
+  border: 1px var(--color-delete) solid;
+  color: var(--color-delete);
 }

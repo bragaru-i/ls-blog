@@ -1,0 +1,28 @@
+.first-article {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  padding: 0 3rem 2rem 3rem;
+}
+.first-article__footer-author {
+  font-size: 95%;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.comments {
+  background-color: #f1f1f1;
+  box-shadow: unset;
+  font-size: 85%;
+  width: 100%;
+  display: block;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.first-article__body {
+  padding: 0 2rem;
+}

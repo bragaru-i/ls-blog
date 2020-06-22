@@ -1,0 +1,25 @@
+#home {
+  height: auto;
+  margin-bottom: 5rem;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+.home-container h3 {
+  text-align: center;
+}
+
+.article-cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-items: start;
+  flex-grow: 1;
+}
+
+.article_card_wrapper {
+  width: 45%;
+}

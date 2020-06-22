@@ -1,0 +1,32 @@
+#contact {
+  height: 100vh;
+  background: url('../../img/footer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 60rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+  padding: 0.5rem;
+}
+textarea {
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 1rem 2rem;
+  height: 20rem;
+  font-style: italic;
+  border: none;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
